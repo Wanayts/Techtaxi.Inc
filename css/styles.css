@@ -906,6 +906,10 @@ p {
   .blog-card .case-btn-arrow .arrow {
     font-size: 1.5rem;
   }
+  .hero-logo {
+    display: none;
+  }
 }
+
 
 
