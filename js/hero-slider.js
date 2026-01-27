@@ -14,7 +14,7 @@ const slides = [
             for modern businesses.`
   },
   {
-    image: 'assets/images/new-ui.jpg',
+    image: 'assets/images/new-ui.JPG',
     breadcrumbs: ['Identity', 'UI', 'Branding'],
     title: `Crafting meaningful UI/UX<br>
         with digital solutions<br>
@@ -88,5 +88,6 @@ heroBg.style.backgroundImage = `url('${slides[0].image}')`;
 heroTitle.innerHTML = slides[0].title;
 heroBreadcrumbs.innerHTML =
   slides[0].breadcrumbs.map(b => `<span>${b}</span>`).join('');
+
 
 startAutoSlide();
