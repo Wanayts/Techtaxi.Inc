@@ -148,11 +148,43 @@
         <div
           class="blog-buttons d-flex flex-wrap gap-3 gap-sm-4 ms-3 mt-3 mt-sm-4 mb-4"
         >
-          <button class="btn btn-clear-secondary btn-sm">IOT</button>
-          <button class="btn btn-clear-secondary btn-sm">Solutions</button>
-          <button class="btn btn-clear-secondary btn-sm">Clients</button>
-          <button class="btn btn-clear-secondary btn-sm">Business</button>
-          <button class="btn btn-clear-secondary btn-sm">Innovation</button>
+          <button
+            type="button"
+            class="btn btn-warning btn-sm active"
+            data-category="all"
+          >
+            All
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-clear-secondary btn-sm"
+            data-category="iot"
+          >
+            IOT
+          </button>
+          <button
+            type="button"
+            class="btn btn-clear-secondary btn-sm"
+            data-category="solutions"
+          >
+            Solutions
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-clear-secondary btn-sm"
+            data-category="business"
+          >
+            Business
+          </button>
+          <button
+            type="button"
+            class="btn btn-clear-secondary btn-sm"
+            data-category="innovation"
+          >
+            Innovation
+          </button>
         </div>
         <section class="section-blog py-5">
           <div class="container">
@@ -200,7 +232,7 @@
                 </div>
               </div>
 
-              <div class="col-6 col-md-4">
+              <div class="col-6 col-md-4" data-category="solutions">
                 <div
                   class="position-relative overflow-hidden rounded-0"
                   style="padding-top: 100%"
@@ -243,7 +275,7 @@
                 </h5>
               </div>
 
-              <div class="col-6 col-md-4">
+              <div class="col-6 col-md-4" data-category="business">
                 <div
                   class="position-relative overflow-hidden rounded-0"
                   style="padding-top: 100%"
@@ -287,7 +319,7 @@
                 </h5>
               </div>
 
-              <div class="col-6 col-md-4">
+              <div class="col-6 col-md-4" data-category="solutions">
                 <div
                   class="position-relative overflow-hidden rounded-0"
                   style="padding-top: 100%"
@@ -330,7 +362,7 @@
                   Boosting Biz Capacities Via AR Software Solutions
                 </h5>
               </div>
-              <div class="col-6 col-md-4">
+              <div class="col-6 col-md-4" data-category="innovation">
                 <div
                   class="position-relative overflow-hidden rounded-0"
                   style="padding-top: 100%"
@@ -372,7 +404,7 @@
                   AI and Creative Writing: Blending Innovation with Art
                 </h5>
               </div>
-              <div class="col-6 col-md-4">
+              <div class="col-6 col-md-4" data-category="iot">
                 <div
                   class="position-relative overflow-hidden rounded-0"
                   style="padding-top: 100%"
@@ -642,4 +674,5 @@
   </body>
   <script src="js/backToTop.js"></script>
 </html>
+
 
