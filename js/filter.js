@@ -98,11 +98,12 @@ buttons.forEach(button => {
   button.addEventListener('click', () => {
     const category = button.getAttribute('data-category') || button.getAttribute('data-filter');
 
-    // Remove active class from all buttons
-    buttons.forEach(btn => btn.classList.remove('active'));
-
-    // Add active class to the clicked button
-    button.classList.add('active');
+     buttons.forEach(btn => {
+        btn.classList.remove('active', 'btn-warning');
+        btn.classList.add('btn-clear-secondary');
+      });
+      button.classList.add('active', 'btn-warning');
+      button.classList.remove('btn-clear-secondary');
 
     // Show/hide portfolio items
     items.forEach(item => {
