@@ -887,5 +887,25 @@ p {
       0.9
     ); /* dark semi-transparent background */
   }
+  .blog-card .blog-overlay {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+  /* Ensure arrow button is visible */
+  .blog-card .case-btn-arrow {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Hide "Read more" text, keep arrow */
+  .blog-card .case-btn-arrow .text {
+    display: none;
+  }
+
+  .blog-card .case-btn-arrow .arrow {
+    font-size: 1.5rem;
+  }
 }
+
 
