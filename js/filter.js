@@ -90,3 +90,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+const buttons = document.querySelectorAll('.portfolio-buttons button');
+const items = document.querySelectorAll('.portfolio-item');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.getAttribute('data-category') || button.getAttribute('data-filter');
+
+    // Remove active class from all buttons
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // Add active class to the clicked button
+    button.classList.add('active');
+
+    // Show/hide portfolio items
+    items.forEach(item => {
+      if (category === 'all') {
+        item.style.display = 'block';
+      } else {
+        // Compare the category of the button and the item
+        if (item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      }
+    });
+  });
+});
