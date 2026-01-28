@@ -67,6 +67,11 @@ body {
   display: block;
 }
 
+.dropdown-menu {
+  transition: none !important;
+}
+
+
 .hero-bg {
   background: url("../assets/images/techtaxi.png") center/cover no-repeat;
   background-size: cover;
@@ -939,6 +944,7 @@ p {
     padding: 0.25em 0.45em;
   }
 }
+
 
 
 
