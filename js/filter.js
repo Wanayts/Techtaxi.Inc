@@ -93,24 +93,19 @@ buttons.forEach(button => {
   });
 });
 
-// solution section filter.js
-const buttons = document.querySelectorAll('.blog-buttons button');
-const items = document.querySelectorAll('.section-item');
+const blogButtons = document.querySelectorAll('.blog-buttons button');
+const blogItems = document.querySelectorAll('.section-blog .col-6.col-md-4');
 
-buttons.forEach(button => {
+blogButtons.forEach(button => {
   button.addEventListener('click', () => {
     const category = button.getAttribute('data-category');
 
-    // 🔹 Toggle active button
-    buttons.forEach(btn => {
-      btn.classList.remove('active', 'btn-primary');
-      btn.classList.add('btn-clear-secondary');
-    });
-    button.classList.add('active', 'btn-primary');
-    button.classList.remove('btn-clear-secondary');
+    // Toggle active button
+    blogButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
 
-    // 🔹 Show/hide blog items
-    items.forEach(item => {
+    // Show/hide blog items
+    blogItems.forEach(item => {
       if (category === 'all') {
         item.style.display = 'block';
       } else {
@@ -119,7 +114,6 @@ buttons.forEach(button => {
     });
   });
 });
-
 
 
 
