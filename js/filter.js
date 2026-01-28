@@ -90,7 +90,7 @@ blogButtons.forEach(button => {
   });
 });
 
-
+// portfolio section filter.js
 const buttons = document.querySelectorAll('.portfolio-buttons button');
 const items = document.querySelectorAll('.portfolio-item');
 
@@ -147,5 +147,6 @@ blogButtons.forEach(button => {
     });
   });
 });
+
 
 
