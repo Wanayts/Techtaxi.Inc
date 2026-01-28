@@ -93,6 +93,7 @@ buttons.forEach(button => {
   });
 });
 
+// solution section filter.js
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.blog-buttons button');
   const items = document.querySelectorAll('.section-item');
@@ -123,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
 
 
 
