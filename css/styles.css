@@ -828,7 +828,10 @@ p {
   opacity: 0;
 }
 
-
+.responsive-links a {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
 
 @media (max-width: 576px) {
   .testimonial-card {
@@ -910,6 +913,7 @@ p {
     display: none;
   }
 }
+
 
 
 
