@@ -62,37 +62,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// solution section filter.js
+const blogSection = document.querySelector('.section-blog'); 
+const blogButtons = blogSection.querySelectorAll('.blog-buttons button');
+const blogItems = blogSection.querySelectorAll('.section-item');
 
-document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.querySelectorAll('.blog-buttons button');
-  const items = document.querySelectorAll('.section-item');
+blogButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.dataset.category;
 
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const filter = button.dataset.category; // get category to filter
+    // 🔹 Toggle active button
+    blogButtons.forEach(btn => {
+      btn.classList.remove('active', 'btn-primary'); 
+      btn.classList.add('btn-clear-secondary');      
+    });
+    button.classList.add('active', 'btn-primary');   
+    button.classList.remove('btn-clear-secondary');  
 
-      // 1️⃣ Active button handling
-      buttons.forEach(btn => {
-        btn.classList.remove('active', 'btn-warning');
-        btn.classList.add('btn-clear-secondary');
-      });
-      button.classList.add('active', 'btn-warning');
-      button.classList.remove('btn-clear-secondary');
-
-      // 2️⃣ Filtering section items
-      items.forEach(item => {
-        const category = item.dataset.category;
-
-        // show if matches filter or show all
-        if (!filter || filter === 'all' || category === filter) {
-          item.style.display = '';
-        } else {
-          item.style.display = 'none';
-        }
-      });
+    // 🔹 Show/hide blog items
+    blogItems.forEach(item => {
+      if (category === 'all' || item.dataset.category === category) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
     });
   });
 });
+
 
 const buttons = document.querySelectorAll('.portfolio-buttons button');
 const items = document.querySelectorAll('.portfolio-item');
@@ -150,4 +147,5 @@ blogButtons.forEach(button => {
     });
   });
 });
+
 
