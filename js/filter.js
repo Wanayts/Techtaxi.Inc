@@ -121,21 +121,20 @@ buttons.forEach(button => {
   });
 });
 
-// Scope to the blog section container
-const blogSection = document.querySelector('.section-blogs');
+const blogSection = document.querySelector('.section-blogs'); // fixed selector
 const blogButtons = blogSection.querySelectorAll('.blog-buttons button');
-const blogItems = blogSection.querySelectorAll('.blog-item');
+const blogItems = blogSection.querySelectorAll('.blog-item'); // matches the class we added
 
 blogButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const category = button.dataset.category; // get data-category
+    const category = button.dataset.category;
 
     // 🔹 Toggle active button
     blogButtons.forEach(btn => {
-      btn.classList.remove('active', 'btn-primary');
-      btn.classList.add('btn-clear-secondary');
+      btn.classList.remove('active', 'btn-warning'); // btn-warning is the active one
+      btn.classList.add('btn-clear-secondary'); 
     });
-    button.classList.add('active', 'btn-primary');
+    button.classList.add('active', 'btn-warning');
     button.classList.remove('btn-clear-secondary');
 
     // 🔹 Show/hide blog items
@@ -148,6 +147,3 @@ blogButtons.forEach(button => {
     });
   });
 });
-
-
-
