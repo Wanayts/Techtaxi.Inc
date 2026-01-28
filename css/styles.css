@@ -869,6 +869,10 @@ p {
   .hero-logo {
     display: none;
   }
+  .badge {
+    font-size: 12px;
+    padding: 0.3em 0.55em;
+  }
 }
 
 /* ------------------ */
@@ -923,7 +927,13 @@ p {
   .testimonial-card h6 { font-size: 10px; }
   .testimonial-card span,
   .testimonial-card p { font-size: 10px; }
+
+  .badge {
+    font-size: 10px;
+    padding: 0.25em 0.45em;
+  }
 }
+
 
 
 
