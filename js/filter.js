@@ -122,7 +122,7 @@ buttons.forEach(button => {
 });
 
 // Scope to the blog section container
-const blogSection = document.querySelector('.section-blog');
+const blogSection = document.querySelector('.section-blogs');
 const blogButtons = blogSection.querySelectorAll('.blog-buttons button');
 const blogItems = blogSection.querySelectorAll('.blog-item');
 
@@ -148,5 +148,6 @@ blogButtons.forEach(button => {
     });
   });
 });
+
 
 
