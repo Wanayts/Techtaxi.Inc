@@ -9,16 +9,16 @@ const slides = [
   {
     image: 'assets/images/bg.png',
     breadcrumbs: ['Tech Innovation', 'AI Solutions', 'Cloud Platforms'],
-    title: `Innovating with technology<br>
-            to solve complex problems<br>
-            for modern businesses.`
+    title: `Innovating with technology to solve<br>
+        complex problems and drive<br>
+        meaningful business impact.`
   },
   {
     image: 'assets/images/new-ui.JPG',
     breadcrumbs: ['Identity', 'UI', 'Branding'],
-    title: `Crafting meaningful UI/UX<br>
-        with digital solutions<br>
-        and emerging technologies.`
+    title: `Crafting meaningful UI/UX that<br>
+        defines identity and builds<br>
+        strong, memorable brands.`
 
   }
 ];
@@ -91,3 +91,4 @@ heroBreadcrumbs.innerHTML =
 
 
 startAutoSlide();
+
