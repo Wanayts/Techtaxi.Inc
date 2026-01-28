@@ -93,6 +93,36 @@ buttons.forEach(button => {
   });
 });
 
+// index blog filter.js
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.blog-buttons button');
+  const blogs = document.querySelectorAll('.section-item');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+
+      buttons.forEach(btn => {
+        btn.classList.remove('active', 'btn-warning');
+        btn.classList.add('btn-clear-secondary');
+      });
+
+      button.classList.add('active', 'btn-warning');
+      button.classList.remove('btn-clear-secondary');
+
+      // filtering
+      blogs.forEach(blog => {
+        const category = blog.dataset.category;
+
+        if (filter === 'all' || category.includes(filter)) {
+          blog.style.display = '';
+        } else {
+          blog.style.display = 'none';
+        }
+      });
+    });
+  });
+});
 
 
 
