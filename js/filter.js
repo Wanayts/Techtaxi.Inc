@@ -1,3 +1,4 @@
+// index blog filter.js
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.blog-buttons button');
   const blogs = document.querySelectorAll('.blog-item');
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// index case filter.js
 document.addEventListener('DOMContentLoaded', () => {
   const buttonGroup = document.querySelector('.case-buttons');
   const buttons = buttonGroup.querySelectorAll('button');
@@ -59,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.blog-buttons button');
@@ -121,7 +124,7 @@ buttons.forEach(button => {
   });
 });
 
-const blogSection = document.querySelector('.section-blogs'); // fixed selector
+const blogSection = document.querySelector('.section-blog'); // fixed selector
 const blogButtons = blogSection.querySelectorAll('.blog-buttons button');
 const blogItems = blogSection.querySelectorAll('.blog-item'); // matches the class we added
 
@@ -147,3 +150,4 @@ blogButtons.forEach(button => {
     });
   });
 });
+
