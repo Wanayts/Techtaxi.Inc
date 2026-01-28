@@ -885,6 +885,9 @@ p {
     height: 120px;
     margin-bottom: 10px;
   }
+  .card-title {
+    font-size: 16px;
+  }
 
   .testimonial-card h5 { font-size: 14px; }
   .testimonial-card h6 { font-size: 12px; }
@@ -912,11 +915,16 @@ p {
     padding-right: 0;
   }
 
+  .card-title {
+    font-size: 14px; /* smaller on mobile */
+  }
+
   .testimonial-card h5 { font-size: 14px; }
   .testimonial-card h6 { font-size: 10px; }
   .testimonial-card span,
   .testimonial-card p { font-size: 10px; }
 }
+
 
 
 
