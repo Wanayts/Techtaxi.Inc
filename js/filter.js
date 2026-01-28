@@ -125,6 +125,39 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// solution section filter.js
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.blog-buttons button');
+  const items = document.querySelectorAll('.main-blog');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.category;
+
+      // 🔹 Active button handling
+      buttons.forEach(btn => {
+        btn.classList.remove('active', 'btn-primary');
+        btn.classList.add('btn-clear-secondary');
+      });
+
+      button.classList.add('active', 'btn-primary');
+      button.classList.remove('btn-clear-secondary');
+
+      // 🔹 Filtering items
+      items.forEach(item => {
+        const category = item.dataset.category;
+
+        if (filter === 'all' || category === filter) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+
+
 
 
 
