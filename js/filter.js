@@ -96,7 +96,7 @@ buttons.forEach(button => {
 // index blog filter.js
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.blog-buttons button');
-  const blogs = document.querySelectorAll('.section-item');
+  const blogs = document.querySelectorAll('.section-blog');
 
   buttons.forEach(button => {
     button.addEventListener('click', () => {
@@ -123,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
 
 
 
