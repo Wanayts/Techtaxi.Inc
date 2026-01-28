@@ -828,11 +828,6 @@ p {
   opacity: 0;
 }
 
-.responsive-links a {
-  word-break: break-word;
-  overflow-wrap: anywhere;
-}
-
 @media (max-width: 576px) {
   .testimonial-card {
     min-height: auto; /* make height flexible */
@@ -912,7 +907,21 @@ p {
   .hero-logo {
     display: none;
   }
+
+  .responsive-text {
+  word-break: break-word; /* allow breaking anywhere */
+  overflow-wrap: anywhere; /* same as above, more aggressive */
+  max-width: 100%;         /* ensure it doesn't overflow container */
 }
+
+.responsive-text a {
+  word-break: break-all;   /* break long URLs */
+  overflow-wrap: anywhere; /* safe fallback */
+}
+
+  
+}
+
 
 
 
