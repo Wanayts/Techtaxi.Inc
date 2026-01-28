@@ -93,27 +93,6 @@ buttons.forEach(button => {
   });
 });
 
-const blogButtons = document.querySelectorAll('.blog-buttons button');
-const blogItems = document.querySelectorAll('.section-blog .col-6.col-md-4');
-
-blogButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const category = button.getAttribute('data-category');
-
-    // Toggle active button
-    blogButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-
-    // Show/hide blog items
-    blogItems.forEach(item => {
-      if (category === 'all') {
-        item.style.display = 'block';
-      } else {
-        item.style.display = item.getAttribute('data-category') === category ? 'block' : 'none';
-      }
-    });
-  });
-});
 
 
 
