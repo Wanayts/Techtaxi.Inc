@@ -99,22 +99,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   buttons.forEach(button => {
     button.addEventListener('click', () => {
-      const filter = button.dataset.category; // get category to filter
+      const filter = button.dataset.category;
 
-      // 1️⃣ Active button handling
+      // 🔹 Active button handling
       buttons.forEach(btn => {
-        btn.classList.remove('active', 'btn-warning');
+        btn.classList.remove('active', 'btn-primary');
         btn.classList.add('btn-clear-secondary');
       });
-      button.classList.add('active', 'btn-warning');
+
+      button.classList.add('active', 'btn-primary');
       button.classList.remove('btn-clear-secondary');
 
-      // 2️⃣ Filtering section items
+      // 🔹 Filtering items
       items.forEach(item => {
         const category = item.dataset.category;
 
-        // show if matches filter or show all
-        if (!filter || filter === 'all' || category === filter) {
+        if (filter === 'all' || category === filter) {
           item.style.display = '';
         } else {
           item.style.display = 'none';
@@ -123,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
 
 
 
