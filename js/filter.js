@@ -93,32 +93,33 @@ buttons.forEach(button => {
   });
 });
 
-const blogSection = document.querySelector('.section-blog'); // fixed selector
-const blogButtons = blogSection.querySelectorAll('.blog-buttons button');
-const blogItems = blogSection.querySelectorAll('.blog-item'); // matches the class we added
+// solution section filter.js
+const buttons = document.querySelectorAll('.blog-buttons button');
+const items = document.querySelectorAll('.section-item');
 
-blogButtons.forEach(button => {
+buttons.forEach(button => {
   button.addEventListener('click', () => {
-    const category = button.dataset.category;
+    const category = button.getAttribute('data-category');
 
     // 🔹 Toggle active button
-    blogButtons.forEach(btn => {
-      btn.classList.remove('active', 'btn-warning'); // btn-warning is the active one
-      btn.classList.add('btn-clear-secondary'); 
+    buttons.forEach(btn => {
+      btn.classList.remove('active', 'btn-primary');
+      btn.classList.add('btn-clear-secondary');
     });
-    button.classList.add('active', 'btn-warning');
+    button.classList.add('active', 'btn-primary');
     button.classList.remove('btn-clear-secondary');
 
     // 🔹 Show/hide blog items
-    blogItems.forEach(item => {
-      if (category === 'all' || item.dataset.category === category) {
+    items.forEach(item => {
+      if (category === 'all') {
         item.style.display = 'block';
       } else {
-        item.style.display = 'none';
+        item.style.display = item.getAttribute('data-category') === category ? 'block' : 'none';
       }
     });
   });
 });
+
 
 
 
