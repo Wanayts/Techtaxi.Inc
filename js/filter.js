@@ -121,24 +121,32 @@ buttons.forEach(button => {
   });
 });
 
-const blogButtons = document.querySelectorAll('.blog-buttons button');
-const blogItems = document.querySelectorAll('.section-blog .col-6.col-md-4');
+// Scope to the blog section container
+const blogSection = document.querySelector('.section-blog');
+const blogButtons = blogSection.querySelectorAll('.blog-buttons button');
+const blogItems = blogSection.querySelectorAll('.blog-item');
 
 blogButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const category = button.getAttribute('data-category');
+    const category = button.dataset.category; // get data-category
 
-    // Toggle active button
-    blogButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
+    // 🔹 Toggle active button
+    blogButtons.forEach(btn => {
+      btn.classList.remove('active', 'btn-primary');
+      btn.classList.add('btn-clear-secondary');
+    });
+    button.classList.add('active', 'btn-primary');
+    button.classList.remove('btn-clear-secondary');
 
-    // Show/hide blog items
+    // 🔹 Show/hide blog items
     blogItems.forEach(item => {
-      if (category === 'all') {
+      if (category === 'all' || item.dataset.category === category) {
         item.style.display = 'block';
       } else {
-        item.style.display = item.getAttribute('data-category') === category ? 'block' : 'none';
+        item.style.display = 'none';
       }
     });
   });
 });
+
+
