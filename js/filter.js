@@ -62,34 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// solution section filter.js
-const blogSection = document.querySelector('.section-blog'); 
-const blogButtons = blogSection.querySelectorAll('.blog-buttons button');
-const blogItems = blogSection.querySelectorAll('.section-item');
-
-blogButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const category = button.dataset.category;
-
-    // 🔹 Toggle active button
-    blogButtons.forEach(btn => {
-      btn.classList.remove('active', 'btn-primary'); 
-      btn.classList.add('btn-clear-secondary');      
-    });
-    button.classList.add('active', 'btn-primary');   
-    button.classList.remove('btn-clear-secondary');  
-
-    // 🔹 Show/hide blog items
-    blogItems.forEach(item => {
-      if (category === 'all' || item.dataset.category === category) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-  });
-});
-
 // portfolio section filter.js
 const buttons = document.querySelectorAll('.portfolio-buttons button');
 const items = document.querySelectorAll('.portfolio-item');
@@ -147,6 +119,7 @@ blogButtons.forEach(button => {
     });
   });
 });
+
 
 
 
