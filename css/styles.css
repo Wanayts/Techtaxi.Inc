@@ -845,6 +845,17 @@ p {
   opacity: 0;
 }
 
+.brands-mobile-image {
+  display: none;
+}
+
+.brands-mobile-image img {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  display: block;
+}
+
 @media (max-width: 991px) {
   h1 { font-size: 32px; }
   h2 { font-size: 28px; }
@@ -942,6 +953,24 @@ p {
   .badge {
     font-size: 10px;
     padding: 0.25em 0.45em;
+  }
+}
+
+@media (max-width: 767px) {
+  .brands-swiper {
+    display: none !important;
+  }
+
+  .brands-mobile-image {
+    display: block;
+    text-align: center;
+  }
+
+  .brands-mobile-image img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: block;
   }
 }
 
