@@ -972,7 +972,13 @@ p {
     margin: 0 auto;
     display: block;
   }
+
+  .brands-swiper .swiper-slide {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
+
 
 
 
