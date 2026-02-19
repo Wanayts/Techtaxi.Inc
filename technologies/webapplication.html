@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/images/logologo.png" type="image/png" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <title>Techtaxi Inc. | Web Application Development</title>
+  </head>
+  <body>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Top Bar -->
+    <div class="top-bar text-center">
+      <div class="container">
+        Let’s discuss your project! Call now:
+        <strong class="text-primary">(+63) 917 103 0459</strong>
+      </div>
+    </div>
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      style="position: relative; z-index: 1000"
+    >
+      <div class="container-fluid px-2">
+        <a class="navbar-brand mx-3" href="../index.html">
+          <img
+            src="../assets/images/logo-text.png"
+            alt="TECHTAXI Logo"
+            class="img-fluid"
+            style="height: 40px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-2">
+            <!-- smaller gap -->
+            <li class="nav-item">
+              <a class="nav-link py-1" href="/solutions.html"
+                >Solutions & Technologies</a
+              >
+            </li>
+            <li class="nav-item dropdown-hover">
+              <a class="nav-link py-1" href="#">Industries</a>
+
+              <!-- Floating panel -->
+              <div class="hover-menu">
+                <a href="/industries/trading-platforms.html"
+                  >FinTech & Trading Platforms</a
+                >
+                <a href="/industries/booking-platforms.html"
+                  >Hospitality & Booking Platforms</a
+                >
+                <a href="/industries/health-wellness.html"
+                  >Health & Wellness Technology</a
+                >
+                <a href="/industries/education.html">Education Technology</a>
+                <a href="/industries/retail-system.html"
+                  >E-commerce & Retail Systems</a
+                >
+                <a href="/industries/logistics-inventory.html"
+                  >Logistics & Inventory Management</a
+                >
+                <a href="/industries/real-estate.html"
+                  >Real Estate & Architectural Automations</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-1" href="/portfolio.html">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link py-1" href="/blog.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link py-1" href="/about.html">About Us</a>
+            </li>
+          </ul>
+          <div class="ms-auto">
+            <a
+              class="btn btn-outline-light px-3 py-1 rounded-0 mx-1"
+              href="#contact-section"
+            >
+              Let’s Talk&nbsp; <i class="fa-solid fa-phone-flip"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="py-5 hero-section">
+      <div class="container">
+        <div class="row align-items-center gx-4 justify-content-center">
+          <!-- Left Column: Hero Text + Form -->
+          <div class="col-lg-6 text-lg-start text-center">
+            <div class="hero-text">
+              <!-- Hero Title -->
+              <h2 class="h2-title mb-5 text-dark text-start">
+                <span
+                  class="custom-underline"
+                  style="border-bottom: 3px solid black"
+                  >We</span
+                >b Application Development
+              </h2>
+
+              <!-- Description -->
+              <p class="mb-5 hero-description">
+                We create high-performance, scalable web applications tailored
+                to your business. Leave your e-mail, and we’ll send a complete
+                guide with tools, resources, and best practices from Techtaxi to
+                help you succeed.
+              </p>
+
+              <!-- Form -->
+              <form class="hero-form">
+                <div class="row g-3 mb-3">
+                  <div class="col-12">
+                    <label class="form-label">
+                      <i class="bi bi-person me-2"></i> Your Name
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control form-line-only"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-8">
+                    <label class="form-label">
+                      <i class="bi bi-envelope me-2"></i> Your Email
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control form-line-only"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-4 d-flex align-items-end">
+                    <button
+                      type="submit"
+                      class="btn btn-primary w-100 rounded-0"
+                    >
+                      Get a Team
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right Column: Hero Logo -->
+          <div class="col-lg-6 text-center hero-logo">
+            <img
+              src="../assets/images/webapp.png"
+              alt="Hero Logo"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-modules py-5 bg-dark">
+      <div class="container">
+        <h2 class="h2-title mb-5 text-white text-start">
+          <span class="custom-underline" style="border-bottom: 3px solid black"
+            >Te</span
+          >chnologies
+        </h2>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Card 1: Back-end -->
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-server fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1 text-dark">Back-end</h6>
+                <p class="small mb-0 text-dark-50">
+                  .NET Core, ASP.NET MVC, Web Forms, Node.js, PHP, Python
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Front-end -->
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-laptop fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1 text-dark">Front-end</h6>
+                <p class="small mb-0 text-dark-50">
+                  React.js, Angular, AngularJS, HTML5, CSS3, JavaScript, AJAX,
+                  jQuery
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: UI Frameworks -->
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-palette fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1 text-dark">UI Frameworks</h6>
+                <p class="small mb-0 text-dark-50">
+                  Bootstrap, Material Design, Zurb Foundation, LESS/SASS
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Microsoft Stack -->
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-windows fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1 text-dark">Microsoft Stack</h6>
+                <p class="small mb-0 text-dark-50">
+                  SharePoint, Silverlight (legacy support)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: APIs & AJAX -->
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-plug fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1 text-dark">APIs & AJAX</h6>
+                <p class="small mb-0 text-dark-50">
+                  AJAX, REST APIs, jQuery integrations
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Tools & Libraries -->
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-tools fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1 text-dark">Tools & Libraries</h6>
+                <p class="small mb-0 text-dark-50">
+                  Node.js modules, NPM, Webpack, Gulp
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-modules py-5">
+      <div class="container">
+        <h2 class="h2-title mb-5 text-dark text-start">
+          <span class="custom-underline" style="border-bottom: 3px solid black"
+            >Mo</span
+          >dules
+        </h2>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Card 1: User Management -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-people-fill fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1">User Management</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Dashboard & Analytics -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-bar-chart-line-fill fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1">Dashboard & Analytics</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Content Management -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-journal-text fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1">Content Management</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: E-commerce / Transactions -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-cart-fill fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1">E-commerce / Transactions</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Notifications & Messaging -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-bell-fill fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1">Notifications & Messaging</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Settings & Configuration -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card h-100 text-center p-3 shadow-sm">
+              <i class="bi bi-gear-fill fs-1 text-primary mb-2"></i>
+              <div class="card-body p-2">
+                <h6 class="card-title mb-1">Settings & Configuration</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="section-industries py-5 bg-dark">
+      <div class="container">
+        <h2 class="h2-title mb-5 text-white text-start">
+          <span class="custom-underline">In</span>dustries
+        </h2>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Mobile Development Card -->
+          <div class="col-6 col-md-3">
+            <div
+              class="position-relative overflow-hidden rounded-0"
+              style="padding-top: 80%"
+            >
+              <div
+                class="card blog-card position-absolute top-0 start-0 w-100 h-100"
+              >
+                <img
+                  src="../assets/images/bookings.png"
+                  alt="Mobile Development"
+                  class="w-100 h-100"
+                  style="object-fit: cover; border-radius: 0"
+                />
+                <a
+                  href="/industries/booking-platforms.html"
+                  class="case-btn-arrow"
+                >
+                  <span class="text">Read more</span>
+                  <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+            <h5 class="card-title mt-2 ms-2">
+              Hospitality & Booking Platforms
+            </h5>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div
+              class="position-relative overflow-hidden rounded-0"
+              style="padding-top: 80%"
+            >
+              <div
+                class="card blog-card position-absolute top-0 start-0 w-100 h-100"
+              >
+                <img
+                  src="../assets/images/wellness.png"
+                  alt="Mobile Development"
+                  class="w-100 h-100"
+                  style="object-fit: cover; border-radius: 0"
+                />
+                <a
+                  href="/industries/health-wellness.html"
+                  class="case-btn-arrow"
+                >
+                  <span class="text">Read more</span>
+                  <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+            <h5 class="card-title mt-2 ms-2">Health & Wellness Technology</h5>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div
+              class="position-relative overflow-hidden rounded-0"
+              style="padding-top: 80%"
+            >
+              <div
+                class="card blog-card position-absolute top-0 start-0 w-100 h-100"
+              >
+                <img
+                  src="../assets/images/maritime.png"
+                  alt="Mobile Development"
+                  class="w-100 h-100"
+                  style="object-fit: cover; border-radius: 0"
+                />
+                <a
+                  href="/industries/maritime-security.html"
+                  class="case-btn-arrow"
+                >
+                  <span class="text">Read more</span>
+                  <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+            <h5 class="card-title mt-2 ms-2">Maritime & Security Solutions</h5>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div
+              class="position-relative overflow-hidden rounded-0"
+              style="padding-top: 80%"
+            >
+              <div
+                class="card blog-card position-absolute top-0 start-0 w-100 h-100"
+              >
+                <img
+                  src="../assets/images/education.png"
+                  alt="Mobile Development"
+                  class="w-100 h-100"
+                  style="object-fit: cover; border-radius: 0"
+                />
+                <a href="/industries/education.html" class="case-btn-arrow">
+                  <span class="text">Read more</span>
+                  <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+            <h5 class="card-title mt-2 ms-2">Education Technology</h5>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div
+              class="position-relative overflow-hidden rounded-0"
+              style="padding-top: 80%"
+            >
+              <div
+                class="card blog-card position-absolute top-0 start-0 w-100 h-100"
+              >
+                <img
+                  src="../assets/images/e-commerce.png"
+                  alt="Mobile Development"
+                  class="w-100 h-100"
+                  style="object-fit: cover; border-radius: 0"
+                />
+                <a href="/industries/retail-system.html" class="case-btn-arrow">
+                  <span class="text">Read more</span>
+                  <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+            <h5 class="card-title mt-2 ms-2">E-commerce & Retail Systems</h5>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div
+              class="position-relative overflow-hidden rounded-0"
+              style="padding-top: 80%"
+            >
+              <div
+                class="card blog-card position-absolute top-0 start-0 w-100 h-100"
+              >
+                <img
+                  src="../assets/images/inventory.png"
+                  alt="Mobile Development"
+                  class="w-100 h-100"
+                  style="object-fit: cover; border-radius: 0"
+                />
+                <a
+                  href="/industries/logistics-inventory.html"
+                  class="case-btn-arrow"
+                >
+                  <span class="text">Read more</span>
+                  <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+            <h5 class="card-title mt-2 ms-2">
+              Logistics & Inventory Management
+            </h5>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div
+              class="position-relative overflow-hidden rounded-0"
+              style="padding-top: 80%"
+            >
+              <div
+                class="card blog-card position-absolute top-0 start-0 w-100 h-100"
+              >
+                <img
+                  src="../assets/images/Architecturals.png"
+                  alt="Mobile Development"
+                  class="w-100 h-100"
+                  style="object-fit: cover; border-radius: 0"
+                />
+                <a href="/industries/real-estate.html" class="case-btn-arrow">
+                  <span class="text">Read more</span>
+                  <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+            <h5 class="card-title mt-2 ms-2">
+              Real Estate & Architectural Automations
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section py-5">
+      <div class="container">
+        <!-- Top Heading -->
+        <div class="text-center mb-5">
+          <h1 class="fw-bold">
+            LET’S TALK
+            <span class="text-primary">ABOUT YOUR NEXT BIG MOVE</span>
+          </h1>
+        </div>
+
+        <div class="row align-items-start">
+          <!-- LEFT SIDE -->
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <p class="mb-4">
+              We’re here to listen, whether you have a solid plan or just a
+              rough idea. Our team is ready to help you explore what’s possible
+              and turn your vision into a working solution.
+            </p>
+
+            <p class="mb-4">
+              No pressure. No jargon. Just a real conversation about how
+              technology can support your goals.
+            </p>
+
+            <p class="mb-5">
+              Send us your ideas, questions, or challenges. We’ll take it from
+              there.
+            </p>
+
+            <!-- Office -->
+            <div class="d-flex align-items-start mb-4">
+              <div class="icon-circle me-3">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-primary">Our Office</h6>
+                <p class="mb-0">
+                  Unit 1405 One Corporate Centre Bldg,<br />
+                  Julia Vargas Ave, Ortigas Center,<br />
+                  San Antonio Pasig City, Philippines 1605
+                </p>
+              </div>
+            </div>
+
+            <!-- Call -->
+            <div class="d-flex align-items-start mb-4">
+              <div class="icon-circle me-3">
+                <i class="bi bi-phone-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-primary">Call us</h6>
+                <p class="mb-0">
+                  Vincent Calaor<br />
+                  Mobile: (+63) 917 103 0459
+                </p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="d-flex align-items-start">
+              <div class="icon-circle me-3">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-primary">E-mail Us</h6>
+                <p class="mb-0">info@techtaxiinc.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE FORM -->
+          <div class="col-lg-6" style="color: #213e6e">
+            <h2 class="fw-bold mb-4 text-lg-mid text-center">Get in Touch</h2>
+
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">
+                    First name <span class="required"> *</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label"
+                    >Last name<span class="required"> *</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label"
+                    >Email<span class="required"> *</span></label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="your@company.com"
+                    required
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label">Phone number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="+1(555) 000-0000"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label"
+                    >Your message<span class="required"> *</span></label
+                  >
+                  <textarea
+                    class="form-control"
+                    rows="5"
+                    placeholder="Leave us a message..."
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-dark w-100 py-2">
+                    SEND MESSAGE
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-primary text-white py-4">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap justify-content-evenly align-items-center text-center gap-3"
+        >
+          <!-- Logo -->
+          <div>
+            <a
+              href="../index.html"
+              class="d-flex align-items-center text-white text-decoration-none justify-content-center"
+            >
+              <img
+                src="../assets/images/logo-text.png"
+                alt="Techtaxi Logo"
+                class="me-2"
+                style="height: 20px"
+              />
+            </a>
+          </div>
+
+          <div class="d-flex gap-3 justify-content-center">
+            <a
+              href="https://www.linkedin.com/company/techtaxiinc/"
+              target="_blank"
+              class="text-white"
+              ><i class="bi bi-linkedin fs-5"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/techtaxiinc"
+              target="_blank"
+              class="text-white"
+              ><i class="bi bi-facebook fs-5"></i
+            ></a>
+            <a
+              href="https://x.com/techtaxiinc"
+              target="_blank"
+              class="text-white"
+              ><i class="bi bi-twitter-x fs-5"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/techtaxiinc/"
+              target="_blank"
+              class="text-white"
+              ><i class="bi bi-instagram fs-5"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@techtaxiinc"
+              target="_blank"
+              class="text-white"
+              ><i class="bi bi-youtube fs-5"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@techtaxiinc"
+              target="_blank"
+              class="text-white"
+              ><i class="bi bi-tiktok fs-5"></i
+            ></a>
+          </div>
+
+          <!-- Credits -->
+          <div>
+            <small class="text-white"
+              >© 2026 Techtaxi Inc. All Rights Reserved.</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#top" class="back-to-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </body>
+  <script src="../js/backToTop.js"></script>
+  <script src="../js/navbar.js"></script>
+</html>
