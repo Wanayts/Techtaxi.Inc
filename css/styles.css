@@ -21,11 +21,15 @@
     Arial,
     sans-serif;
 }
-html, body {
+html {
+  background-color: #000; /* match your design */
+}
+
+body {
   margin: 0;
   padding: 0;
-  min-height: 100%;
-  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
 }
 
 .top-bar {
@@ -1092,6 +1096,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
