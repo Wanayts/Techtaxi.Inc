@@ -145,93 +145,53 @@
         </div>
         <!-- Filter buttons -->
         <div
-          class="blog-buttons d-flex flex-wrap gap-3 gap-sm-4 ms-3 mt-3 mt-sm-4 mb-4"
+          class="blog-buttons d-flex flex-wrap gap-3 gap-sm-4 ms-3 mt-3 mt-sm-4"
         >
           <button
             type="button"
-            class="btn btn-warning btn-sm active"
-            data-category="all"
+            class="btn btn-clear-secondary btn-sm active"
+            data-filter="all"
           >
             All
           </button>
-
           <button
             type="button"
             class="btn btn-clear-secondary btn-sm"
-            data-category="iot"
+            data-filter="software-engineering"
           >
-            IOT
+            Software Engineering
           </button>
           <button
             type="button"
             class="btn btn-clear-secondary btn-sm"
-            data-category="solutions"
+            data-filter="emerging-technologies"
           >
-            Solutions
-          </button>
-
-          <button
-            type="button"
-            class="btn btn-clear-secondary btn-sm"
-            data-category="business"
-          >
-            Business
+            Emerging Technologies
           </button>
           <button
             type="button"
             class="btn btn-clear-secondary btn-sm"
-            data-category="innovation"
+            data-filter="business-strategy"
           >
-            Innovation
+            Business & Strategy
+          </button>
+          <button
+            type="button"
+            class="btn btn-clear-secondary btn-sm"
+            data-filter="industry-applications"
+          >
+            Industry Applications
           </button>
         </div>
+
         <section class="section-blog py-5">
           <div class="container">
             <div class="row g-5">
-              <!-- Featured Blog -->
-              <div class="row mb-5">
-                <div class="col-12 main-blog" data-category="all" >
-                  <div class="card featured-blog border-0 mt">
-                    <div class="row g-0 align-items-center">
-                      <!-- Image -->
-                      <div class="col-md-6 position-relative">
-                        <span class="badge bg-primary position-absolute m-3"
-                          >TECHNOLOGY</span
-                        >
-                        <img
-                          src="assets/images/1-Reap-ROI-Benefits-with-Customized-Acumatica-Solutions.png"
-                          class="img-fluid w-100 h-100"
-                          style="object-fit: cover"
-                          alt="Featured Blog"
-                        />
-                      </div>
-
-                      <!-- Content -->
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h3 class="card-title">
-                            Reap ROI Benefits with Customized Acumatica
-                            Solutions
-                          </h3>
-                          <p class="card-text text-muted">
-                            In today's fiercely competitive business landscape,
-                            efficiency and adaptability are very important.
-                            Businesses need to adapt quickly to changing market
-                            demands and customer expectations...
-                          </p>
-                          <a
-                            href="blog/Reap_ROI_Benefits_with_Customized_Acumatica_Solutions.html"
-                            class="btn btn-warning text-white"
-                            >Read more</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 main-blog" data-category="solutions">
+              <!-- Blog 1 -->
+              <div
+                class="col-6 col-md-4 blog-item"
+                data-category="business-strategy"
+              >
                 <div
                   class="position-relative overflow-hidden rounded-0"
                   style="padding-top: 100%"
@@ -241,7 +201,58 @@
                   >
                     <!-- Badge -->
                     <span class="badge bg-primary position-absolute m-3"
-                      >SOLUTIONS</span
+                      >BUSINESS</span
+                    >
+                    <!-- Image covers entire square -->
+                    <img
+                      src="assets/images/1-Reap-ROI-Benefits-with-Customized-Acumatica-Solutions.png"
+                      alt="Blog Image"
+                      class="w-100 h-100"
+                      style="object-fit: cover; border-radius: 0"
+                    />
+                    <!-- Hover overlay paragraph -->
+                    <div class="blog-overlay">
+                      <p>
+                        In today's fiercely competitive business landscape,
+                        efficiency and adaptability are very important.
+                        Businesses need to adapt quickly to changing market
+                        demands and customer expectations. This is where
+                        Enterprise Resource Planning (ERP) systems like
+                        Acumatica come in. Acumatica provides a strong
+                        foundation for managing core business processes, but its
+                        true power lies in its customization capabilities.
+                      </p>
+                    </div>
+                    <!-- Floating button -->
+                    <a
+                      href="blog/Reap_ROI_Benefits_with_Customized_Acumatica_Solutions.html"
+                      class="case-btn-arrow"
+                    >
+                      <span class="text">Read more</span>
+                      <span class="arrow">→</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Title & description outside -->
+                <h5 class="card-title mt-2 ms-2">
+                  Reap ROI Benefits with Customized Acumatica Solutions
+                </h5>
+              </div>
+
+              <div
+                class="col-6 col-md-4 blog-item"
+                data-category="business-strategy"
+              >
+                <div
+                  class="position-relative overflow-hidden rounded-0"
+                  style="padding-top: 100%"
+                >
+                  <div
+                    class="card blog-card position-absolute top-0 start-0 w-100 h-100"
+                  >
+                    <!-- Badge -->
+                    <span class="badge bg-primary position-absolute m-3"
+                      >BUSINESS</span
                     >
                     <!-- Image covers entire square -->
                     <img
@@ -255,7 +266,12 @@
                       <p>
                         Businesses are increasingly turning to custom software
                         solutions to fulfill their specific needs associated
-                        with today's continually evolving digital market.
+                        with today's continually evolving digital market. Custom
+                        software provides numerous advantages that help firms do
+                        well, from increasing productivity to guaranteeing
+                        security and scalability. Let's explore the detailed
+                        benefits of customized software and why it is now a
+                        vital tool for modern companies.
                       </p>
                     </div>
                     <!-- Floating button -->
@@ -274,7 +290,10 @@
                 </h5>
               </div>
 
-              <div class="col-6 col-md-4 main-blog" data-category="business">
+              <div
+                class="col-6 col-md-4 blog-item"
+                data-category="software-engineering"
+              >
                 <div
                   class="position-relative overflow-hidden rounded-0"
                   style="padding-top: 100%"
@@ -284,7 +303,7 @@
                   >
                     <!-- Badge -->
                     <span class="badge bg-primary position-absolute m-3"
-                      >BUSINESS</span
+                      >SOFTWARE</span
                     >
                     <!-- Image covers entire square -->
                     <img
@@ -299,7 +318,10 @@
                         With today's fast-growing digital landscape, companies
                         are facing the constant challenge of not just addressing
                         current needs but also anticipating and accommodating
-                        future development.
+                        future development. Effectively managing spikes in user
+                        traffic, fluctuations in data loads, and the dynamic
+                        nature of resource requirements is important for
+                        ensuring the long-term success of web applications.
                       </p>
                     </div>
                     <!-- Floating button -->
@@ -318,7 +340,10 @@
                 </h5>
               </div>
 
-              <div class="col-6 col-md-4 main-blog" data-category="solutions">
+              <div
+                class="col-6 col-md-4 blog-item"
+                data-category="emerging-technologies"
+              >
                 <div
                   class="position-relative overflow-hidden rounded-0"
                   style="padding-top: 100%"
@@ -328,7 +353,7 @@
                   >
                     <!-- Badge -->
                     <span class="badge bg-primary position-absolute m-3"
-                      >SOLUTIONS</span
+                      >TECHNOLOGIES</span
                     >
                     <!-- Image covers entire square -->
                     <img
@@ -343,7 +368,13 @@
                         Businesses are constantly on the hunt for new and
                         creative ways to interact with customers. They aim to
                         improve operations and set themselves apart from
-                        competitors in the digital landscape nowadays.
+                        competitors in the digital landscape nowadays. In this
+                        sense, augmented reality (AR) is one technological
+                        advancement that has shown to be significant. AR
+                        software solutions can transform ordinary experiences
+                        into remarkable ones by incorporating digital content
+                        into the actual environment. This opens up endless
+                        possibilities across a wide range of sectors.
                       </p>
                     </div>
                     <!-- Floating button -->
@@ -361,7 +392,10 @@
                   Boosting Biz Capacities Via AR Software Solutions
                 </h5>
               </div>
-              <div class="col-6 col-md-4 main-blog" data-category="innovation">
+              <div
+                class="col-6 col-md-4 blog-item"
+                data-category="emerging-technologies"
+              >
                 <div
                   class="position-relative overflow-hidden rounded-0"
                   style="padding-top: 100%"
@@ -371,7 +405,7 @@
                   >
                     <!-- Badge -->
                     <span class="badge bg-primary position-absolute m-3"
-                      >INNOVATION</span
+                      >TECHNOLOGIES</span
                     >
                     <!-- Image covers entire square -->
                     <img
@@ -385,7 +419,14 @@
                       <p>
                         The advancement of technology, particularly in the field
                         of AI and creative writing, can make or break the
-                        essence and quality of art and literature.
+                        essence and quality of art and literature. More so, our
+                        society gets to decide how they perceive this role of AI
+                        and ethically utilize it as a driving force to leverage
+                        their craftsmanship in the creative industries. This
+                        article delves into the underlying connection between
+                        artificial intelligence (AI) and the intricacies of art
+                        and literature. It will cover the potential
+                        contributions of AI to these two fields.
                       </p>
                     </div>
                     <!-- Floating button -->
@@ -403,7 +444,10 @@
                   AI and Creative Writing: Blending Innovation with Art
                 </h5>
               </div>
-              <div class="col-6 col-md-4 main-blog" data-category="iot">
+              <div
+                class="col-6 col-md-4 blog-item"
+                data-category="industry-applications"
+              >
                 <div
                   class="position-relative overflow-hidden rounded-0"
                   style="padding-top: 100%"
@@ -413,7 +457,7 @@
                   >
                     <!-- Badge -->
                     <span class="badge bg-primary position-absolute m-3"
-                      >IOT</span
+                      >INDUSTRY</span
                     >
                     <!-- Image covers entire square -->
                     <img
@@ -428,6 +472,13 @@
                         As smart home technology becomes increasingly integrated
                         into our daily lives, the need to secure IoT (Internet
                         of Things) devices at home has never been more serious.
+                        These devices, from speakers to connected appliances,
+                        offer convenience and efficiency but also introduce
+                        security risks that must be addressed. In this guide, we
+                        will take a closer look at the importance of securing
+                        IoT devices, provide IoT device management tips,
+                        identify potential risks, and offer actionable steps to
+                        safeguard your home network and personal data.
                       </p>
                     </div>
                     <!-- Floating button -->
@@ -671,3 +722,4 @@
   <script src="js/filter.js"></script>
   <script src="js/navbar.js"></script>
 </html>
+
