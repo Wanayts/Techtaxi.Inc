@@ -1,3 +1,17 @@
+/* Chrome / Edge */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;   /* removes white background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
 * {
   font-family:
     "Roboto",
@@ -1082,6 +1096,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
