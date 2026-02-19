@@ -554,124 +554,147 @@
     </section>
     <section class="contact-section py-5">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <!-- Heading (centered) -->
-            <h2 class="section-title mb-3 text-center">
-              <span class="about-text">LET’S TALK</span>
-              <span class="brand-text">ABOUT YOUR NEXT BIG MOVE</span>
-            </h2>
+        <!-- Top Heading -->
+        <div class="text-center mb-5">
+          <h1 class="fw-bold">
+            LET’S TALK
+            <span class="text-primary">ABOUT YOUR NEXT BIG MOVE</span>
+          </h1>
+        </div>
 
-            <!-- Subheading / Paragraph (centered) -->
-            <p class="text-muted mb-5 text-justify">
+        <div class="row align-items-start">
+          <!-- LEFT SIDE -->
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <p class="mb-4">
               We’re here to listen, whether you have a solid plan or just a
               rough idea. Our team is ready to help you explore what’s possible
-              and turn your vision into a working solution. No pressure. No
-              jargon. Just a real conversation about how technology can support
-              your goals. Send us your ideas, questions, or challenges. We’ll
-              take it from there.
+              and turn your vision into a working solution.
             </p>
 
-            <!-- Contact Form (LEFT-aligned) -->
-            <form
-              action="#"
-              method="post"
-              class="contact-form"
-              id="contact-section"
-            >
+            <p class="mb-4">
+              No pressure. No jargon. Just a real conversation about how
+              technology can support your goals.
+            </p>
+
+            <p class="mb-5">
+              Send us your ideas, questions, or challenges. We’ll take it from
+              there.
+            </p>
+
+            <!-- Office -->
+            <div class="d-flex align-items-start mb-4">
+              <div class="icon-circle me-3">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-primary">Our Office</h6>
+                <p class="mb-0">
+                  Unit 1405 One Corporate Centre Bldg,<br />
+                  Julia Vargas Ave, Ortigas Center,<br />
+                  San Antonio Pasig City, Philippines 1605
+                </p>
+              </div>
+            </div>
+
+            <!-- Call -->
+            <div class="d-flex align-items-start mb-4">
+              <div class="icon-circle me-3">
+                <i class="bi bi-phone-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-primary">Call us</h6>
+                <p class="mb-0">
+                  Vincent Calaor<br />
+                  Mobile: (+63) 917 103 0459
+                </p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="d-flex align-items-start">
+              <div class="icon-circle me-3">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-primary">E-mail Us</h6>
+                <p class="mb-0">
+                  Email: 
+                  <a href="mailto:info@techtaxiinc.com">info@techtaxiinc.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE FORM -->
+          <div class="col-lg-6" style="color: #213e6e">
+            <h2 class="fw-bold mb-4 text-lg-mid text-center">Get in Touch</h2>
+
+            <form>
               <div class="row g-3">
-                <!-- Name -->
                 <div class="col-md-6">
                   <label class="form-label">
-                    <i class="bi bi-person me-2"></i> First Name
+                    First name <span class="required"> *</span>
                   </label>
                   <input
                     type="text"
-                    name="first_name"
                     class="form-control"
                     placeholder="First Name"
                     required
                   />
                 </div>
 
-                <!-- Email -->
                 <div class="col-md-6">
-                  <label class="form-label">
-                    <i class="bi bi-envelope me-2"></i> Last Name
-                  </label>
+                  <label class="form-label"
+                    >Last name<span class="required"> *</span></label
+                  >
                   <input
-                    type="email"
-                    name="email"
+                    type="text"
                     class="form-control"
                     placeholder="Last Name"
                     required
                   />
                 </div>
 
-                <!-- Email -->
                 <div class="col-12">
-                  <label class="form-label">
-                    <i class="bi bi-envelope me-2"></i> Your Email
-                  </label>
+                  <label class="form-label"
+                    >Email<span class="required"> *</span></label
+                  >
                   <input
                     type="email"
-                    name="email"
                     class="form-control"
                     placeholder="your@company.com"
                     required
                   />
                 </div>
 
-                <!-- Phone -->
                 <div class="col-12">
-                  <label class="form-label">
-                    <i class="bi bi-telephone me-2"></i> Your Phone Number
-                  </label>
+                  <label class="form-label">Phone number</label>
                   <input
                     type="tel"
-                    name="phone"
                     class="form-control"
                     placeholder="+1(555) 000-0000"
                   />
                 </div>
 
-                <!-- Message -->
                 <div class="col-12">
-                  <label class="form-label">
-                    <i class="bi bi-chat-left-text me-2"></i> Your Message
-                  </label>
+                  <label class="form-label"
+                    >Your message<span class="required"> *</span></label
+                  >
                   <textarea
-                    name="message"
                     class="form-control"
                     rows="5"
-                    placeholder="Leave a message..."
+                    placeholder="Leave us a message..."
                     required
                   ></textarea>
                 </div>
 
-                <!-- Submit Button -->
-                <div class="col-12 text-start">
-                  <button type="submit" class="btn btn-custom px-4 py-2">
-                    Send
+                <div class="col-12">
+                  <button type="submit" class="btn btn-dark w-100 py-2">
+                    SEND MESSAGE
                   </button>
                 </div>
               </div>
             </form>
-
-            <!-- Contact Info -->
-            <div
-              class="contact-info mt-5 d-flex flex-column align-items-center text-start w-75 mx-auto"
-            >
-              <p class="text-start mb-1">
-                <i class="bi bi-geo-alt-fill me-2"></i>
-                <strong>PH<br /></strong>
-                Unit 1405 One Corporate Centre Bldg.,<br />
-                Julia Vargas Ave., Ortigas Center,<br />
-                San Antonio Pasig City <br />
-                <i class="bi bi-telephone-fill me-2"></i>
-                <strong>+63 917 103 9345</strong>
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -693,17 +716,6 @@
                 class="me-2"
                 style="height: 20px"
               />
-            </a>
-          </div>
-
-          <!-- Email -->
-          <div>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=info@techtaxiinc.com"
-              target="_blank"
-              class="text-white small text-decoration-none"
-            >
-              <i class="bi bi-envelope me-1"></i> info@techtaxiinc.com
             </a>
           </div>
 
@@ -749,7 +761,7 @@
           <!-- Credits -->
           <div>
             <small class="text-white"
-              >© 2026 TechTaxi Inc. All Rights Reserved.</small
+              >© 2026 Techtaxi Inc. All Rights Reserved.</small
             >
           </div>
         </div>
@@ -762,6 +774,7 @@
   <script src="../js/backToTop.js"></script>
   <script src="../js/navbar.js"></script>
 </html>
+
 
 
 
