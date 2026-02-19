@@ -14,10 +14,8 @@ html {
 }
 
 body {
-  background: red;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 .top-bar {
@@ -1084,6 +1082,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
