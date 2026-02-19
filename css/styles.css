@@ -1,6 +1,6 @@
 /* Chrome / Edge */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1096,6 +1096,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
