@@ -4,7 +4,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;   /* removes white background */
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1096,6 +1096,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
