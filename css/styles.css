@@ -419,6 +419,20 @@ p {
   object-fit: cover;
 }
 
+.testimonial-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  opacity: 0;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
 .overlay {
   position: absolute;
   bottom: 0; /* start at the bottom */
@@ -980,9 +994,17 @@ p {
 }
 
 @media (max-width: 800px) {
-  .testimonial-card {
-    padding: 15px;
-    min-height: 300px;
+   .testimonial-card .overlay {
+    position: static;   /* remove absolute */
+    opacity: 1;         /* always visible */
+    background: transparent;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .testimonial-card .overlay-text {
+    font-size: 12px;
+    line-height: 1.4;
   }
 
   .testimonial-card .avatar {
@@ -1027,6 +1049,10 @@ p {
     font-size: 14px;
   }
 
+  .testimonial-card .overlay-text {
+    font-size: 10px;
+  }
+  
   .testimonial-card {
     min-height: auto;
   }
@@ -1079,6 +1105,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
