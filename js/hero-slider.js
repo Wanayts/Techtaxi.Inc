@@ -14,7 +14,7 @@ const slides = [
             drive impact.`
   },
   {
-    image: 'assets/images/new-ui.JPG',
+    image: 'assets/images/new-ui.jpg',
     breadcrumbs: ['UI/UX Design', 'Branding', 'Product Interfaces'],
     title: `Crafting meaningful UI/UX<br>
         that elevates your brand<br>
@@ -134,4 +134,5 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log("Back-to-top script loaded");
   });
 });
+
 
