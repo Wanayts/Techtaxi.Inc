@@ -953,6 +953,9 @@ p {
   background-color: #f9f9f9 !important;
 }
 
+.txt-blue-header {
+    color: #0d6efd;
+  }
 
 @media (max-width: 991px) {
   h1 {
@@ -1124,6 +1127,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
