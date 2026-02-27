@@ -941,8 +941,16 @@ p {
   transition: all 0.3s ease;
 }
 
-.tech-section {
-  background: linear-gradient(to bottom right, #1a2238, #0f1626);
+.hover-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.bg-light {
+  background-color: #f9f9f9 !important;
 }
 
 
@@ -1116,6 +1124,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
