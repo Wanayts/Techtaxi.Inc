@@ -935,6 +935,13 @@ p {
   color: red;
 }
 
+.about-card {
+  background: #fff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
 @media (max-width: 991px) {
   h1 {
     font-size: 32px;
@@ -1105,6 +1112,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
