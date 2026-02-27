@@ -953,9 +953,10 @@ p {
   background-color: #f9f9f9 !important;
 }
 
+.card h5,
 .txt-blue-header {
-    color: #0d6efd;
-  }
+    color: #2196f3;
+}
 
 @media (max-width: 991px) {
   h1 {
@@ -1127,6 +1128,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
