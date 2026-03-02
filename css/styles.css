@@ -937,7 +937,7 @@ p {
 
 .about-card {
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 4px;
   transition: all 0.3s ease;
 }
 
@@ -1132,6 +1132,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
