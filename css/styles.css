@@ -982,7 +982,16 @@ p {
     font-size: 15px;
   }
 
- 
+ .navbar-collapse { 
+   position: fixed; 
+   top: 100px; 
+   left: 0; 
+   width: 80%; 
+   padding: 1rem; 
+   box-sizing: border-box; 
+   z-index: 1000; 
+   background-color: rgba(179, 167, 167, 0.9); 
+ }
 
   .blog-card .blog-overlay {
     opacity: 0 !important;
@@ -1123,6 +1132,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
