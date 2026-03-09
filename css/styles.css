@@ -982,7 +982,7 @@ p {
     font-size: 15px;
   }
 
-  .navbar-collapse {
+ .navbar-collapse {
   position: fixed;
   top: 100px;
   left: 0;
@@ -992,7 +992,6 @@ p {
   z-index: 1000;
   background-color: rgba(179, 167, 167, 0.9);
 
-  height: auto;
   max-height: calc(100vh - 100px);
   overflow-y: auto;
 }
@@ -1136,6 +1135,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
