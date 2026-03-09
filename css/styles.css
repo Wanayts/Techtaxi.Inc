@@ -983,23 +983,15 @@ p {
   }
 
  .navbar-collapse {
-    position: fixed;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
-    z-index: 1000;
-    background-color: rgba(179, 167, 167, 0.9);
-
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-
-    /* modern animation */
-    transform: translateY(-10px);
-    opacity: 0;
-    transition: transform 0.25s ease, opacity 0.25s ease;
-  }
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  z-index: 1000;
+  background-color: rgba(179, 167, 167, 0.9);
+}
 
   .navbar-collapse.show {
     transform: translateY(0);
@@ -1151,6 +1143,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
