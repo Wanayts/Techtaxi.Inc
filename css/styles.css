@@ -991,9 +991,24 @@ p {
     box-sizing: border-box;
     z-index: 1000;
     background-color: rgba(179, 167, 167, 0.9);
+
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+
+    /* modern animation */
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: transform 0.25s ease, opacity 0.25s ease;
   }
 
+  .navbar-collapse.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* remove bootstrap height animation */
   .navbar-collapse.collapsing {
+    height: auto !important;
     transition: none !important;
   }
 
@@ -1136,6 +1151,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
