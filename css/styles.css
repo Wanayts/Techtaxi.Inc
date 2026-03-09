@@ -991,10 +991,6 @@ p {
     box-sizing: border-box;
     z-index: 1000;
     background-color: rgba(179, 167, 167, 0.9);
-
-    height: auto !important;
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
   }
 
   .navbar-collapse.collapsing {
@@ -1140,6 +1136,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
