@@ -1032,6 +1032,11 @@ p {
 }
 
 @media (max-width: 800px) {
+
+  .blog-card .blog-overlay {
+    display: none;
+  }
+  
    .testimonial-card .overlay {
     position: static;   /* remove absolute */
     opacity: 1;         /* always visible */
@@ -1068,6 +1073,11 @@ p {
 }
 
 @media (max-width: 576px) {
+  
+  .blog-card .blog-overlay {
+    display: none;
+  }
+  
   h1 {
     font-size: 28px;
   }
@@ -1131,6 +1141,10 @@ p {
     text-align: center;
   }
 
+  .blog-card .blog-overlay {
+    display: none;
+  }
+
   .brands-mobile-image img {
     width: 100%;
     max-width: 320px;
@@ -1143,6 +1157,7 @@ p {
     margin-right: 0 !important;
   }
 }
+
 
 
 
