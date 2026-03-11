@@ -1156,7 +1156,13 @@ p {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+  
+  .blog-card .badge {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
 }
+
 
 
 
