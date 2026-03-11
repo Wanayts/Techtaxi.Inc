@@ -58,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
 // index case filter.js
 document.addEventListener('DOMContentLoaded', () => {
   const buttonGroup = document.querySelector('.case-buttons');
@@ -69,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
       const filter = button.dataset.filter;
 
-      // 🔹 Active button handling
+      // Active button
       buttons.forEach(btn => {
         btn.classList.remove('active', 'btn-warning');
         btn.classList.add('btn-clear-secondary');
@@ -78,11 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
       button.classList.add('active', 'btn-warning');
       button.classList.remove('btn-clear-secondary');
 
-      // 🔹 Filtering logic
+      // Filtering
       items.forEach(item => {
         const category = item.dataset.category;
 
-        if (filter === 'all' || category === filter) {
+        if (filter === 'all' || category.includes(filter)) {
           item.style.display = '';
         } else {
           item.style.display = 'none';
@@ -186,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
 
 
 
