@@ -962,6 +962,15 @@ p {
   color: #222;
 }
 
+.black-link {
+  color: black;
+  text-decoration: none;
+}
+
+.black-link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 991px) {
   h1 {
     font-size: 32px;
@@ -1162,6 +1171,7 @@ p {
     padding: 4px 6px;
   }
 }
+
 
 
 
